@@ -25,7 +25,7 @@ export function Countdown() {
           new Date(activeCycle.startDate)
         );
 
-        if (secondsDifference >= totalSeconds) {
+        if (secondsDifference - totalSeconds) {
           markCurrentCycleAsFinished();
 
           setSecondsPassed(totalSeconds);
